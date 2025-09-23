@@ -64,16 +64,7 @@ sudo systemctl start docker
 
 ---
 
-## 7. Configure firewall
-
-```bash
-sudo firewall-cmd --permanent --zone=trusted --add-interface=docker0
-sudo firewall-cmd --permanent --zone=trusted --add-masquerade
-```
-
----
-
-## 8. Optional: Run Docker Without Sudo
+## 7. Optional: Run Docker Without Sudo
 
 ```bash
 sudo groupadd docker   # Only if group does not exist
@@ -83,7 +74,7 @@ newgrp docker
 
 ---
 
-## 7. Verify Docker Installation
+## 8. Verify Docker Installation
 
 ```bash
 docker run hello-world
