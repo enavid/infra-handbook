@@ -266,27 +266,3 @@ export http_proxy="socks5://user:p%40ssw0rd@proxy.server.com:1080"
 
 ---
 
-## Contributing
-
-This reference guide is designed to be expanded with additional categories and commands. Suggested future sections:
-
-- Docker and Container Management
-- Systemd Service Management
-- Firewall Configuration (UFW, IPTables)
-- SSL/TLS Certificate Management
-- Disk and Storage Operations
-- Performance Monitoring and Tuning
-- Backup and Recovery Procedures
-
----
-
-## Version Information
-
-**Last Updated:** November 2025  
-**Tested On:** Oracle Linux 7.9, Ubuntu 20.04/22.04, Debian 11/12, CentOS 7/8
-
----
-
-## License
-
-This documentation is provided as-is for system administration reference purposes.
