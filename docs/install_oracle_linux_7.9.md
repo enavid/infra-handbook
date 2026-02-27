@@ -1,4 +1,3 @@
-
 # Oracle Linux 7.9 Installation Guide
 
 ## 1. Download ISO
@@ -31,7 +30,21 @@ Use **LVM** as the file system type with **XFS** format.
 | `/u01`    | 70 GB | LVM (mount after OS installation) |
 | `/u02`    | 70 GB | LVM (mount after OS installation) |
 
-## 3. Creating and Mounting u01 and u02 Partitions
+## 3. Software Selection During Installation
+
+During the installation process, select **Infrastructure Server** as the base environment and check the following additional packages:
+
+1. Debugging Tools
+2. Hardware Monitoring Utilities
+3. Java Platform
+4. Large Systems Performance
+5. Performance Tools
+6. Compatibility Libraries
+7. Development Tools
+8. Security Tools
+9. System Administration Tools
+
+## 4. Creating and Mounting u01 and u02 Partitions
 
 For database servers, `/u01` and `/u02` partitions should be created and mounted after the initial OS installation.
 
@@ -92,20 +105,6 @@ mount -a
 # Verify mounted filesystems
 df -h
 ```
-
-## 4. Software Selection During Installation
-
-During the installation process, select **Infrastructure Server** as the base environment and check the following additional packages:
-
-1. Debugging Tools
-2. Hardware Monitoring Utilities
-3. Java Platform
-4. Large Systems Performance
-5. Performance Tools
-6. Compatibility Libraries
-7. Development Tools
-8. Security Tools
-9. System Administration Tools
 
 ## 5. Network Configuration (Static IP)
 
